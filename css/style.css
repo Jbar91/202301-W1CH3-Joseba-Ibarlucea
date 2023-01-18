@@ -1,0 +1,158 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif, Arial;
+}
+
+header {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: cornflowerblue;
+}
+
+header > div {
+  width: 50%;
+}
+
+header > div > nav > ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 8px;
+}
+header > div > nav > ul > li {
+  padding: 3px;
+}
+
+header > div > nav > ul > li:nth-child(2) {
+  font-weight: bold;
+}
+h1 {
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+main {
+  height: 58vh;
+}
+
+main > section:nth-child(1) {
+  padding: 15px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: burlywood;
+}
+
+main > section:nth-child(1) > a > img {
+  width: 50px;
+  height: 50px;
+}
+
+main > section:nth-child(2) {
+  padding: 20px 2px;
+  display: flex;
+  justify-content: space-between;
+  background-color: blanchedalmond;
+  flex-direction: column;
+}
+
+main > section:nth-child(2) > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+main > section:nth-child(2) > div:nth-child(1) > span {
+  margin: 1px;
+}
+
+main > section:nth-child(2) > div:hover {
+  color: orange;
+}
+
+main > section:nth-child(2) > div:nth-child(1) > span:nth-child(1) {
+  text-decoration: line-through;
+}
+
+main > section:nth-child(2) > div:nth-child(3) > span:nth-child(1) {
+  text-decoration: line-through;
+}
+
+main > section:nth-child(2) > div:nth-child(2) {
+  display: flex;
+  align-items: center;
+}
+
+main > section:nth-child(2) > div:nth-child(2) > p {
+  margin: 1px;
+}
+
+main > span {
+  padding: 12px 0;
+  padding-bottom: 100vmin;
+  border-top: 2px solid pink;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 1.4em;
+  background-color: blanchedalmond;
+}
+
+footer {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: cornflowerblue;
+}
+
+footer > img {
+  width: 90px;
+  height: 40px;
+}
+
+/* Add items */
+main > div {
+  height: 105vmin;
+  padding-top: 10px;
+  background-color: bisque;
+}
+
+main > div > h2 {
+  margin: 35px 0;
+}
+
+main > main > div > form {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+main > div > form input[type="text"] {
+  margin: 5px;
+  margin-bottom: 15px;
+}
+
+[type="text"],
+[type="number"] {
+  display: block;
+  border: none;
+  border-bottom: 1px solid purple;
+  background-color: bisque;
+  width: 210px;
+}
+
+[type="submit"] {
+  padding: 10px;
+  margin-left: 10px;
+  color: white;
+  background-color: cornflowerblue;
+  border: none;
+}
+
+[type="submit"]:hover {
+  background-color: blue;
+}
